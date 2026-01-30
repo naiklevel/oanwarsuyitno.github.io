@@ -121,7 +121,7 @@
     <div class="container">
 
         <!-- PROBLEM -->
-        <section class="problem">
+        <section class="problem reveal">
             <h2>Punya Produk / Jasa, Tapi Online-nya Gitu-Gitu Aja?</h2>
             <ul>
                 <li>Jualan cuma lewat WhatsApp & IG bio</li>
@@ -204,6 +204,21 @@
     <footer>
         © 2026 Solodeveloperidn
     </footer>
+<script>
+const reveals = document.querySelectorAll(".reveal");
 
+function revealOnScroll() {
+    reveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+            </script>
 </body>
 </html>
