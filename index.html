@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -176,6 +176,15 @@
       border-radius: 20px;
     }
     /* PROBLEM */
+    h3 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #22d3ee, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .box {
       width: 300px;
       background-color: #2b2b2b;
@@ -224,6 +233,10 @@ li {
   font-size: 14px;
   flex-shrink: 0;
 }
+.emotion {
+  margin-top: 20px;
+  opacity: 0.8;
+}
 /* FEATURE */
 .checklist {
   max-width: 600px;
@@ -253,6 +266,111 @@ li {
   font-size: 14px;
   flex-shrink: 0;
 }
+/* TRUST */
+.trust {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.trust h2 {
+  margin-bottom: 30px;
+}
+
+.trust-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+/* BONUS */
+.bonus {
+  background: #00ff9c;
+  color: #000;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bonus h2 {
+  margin-bottom: 20px;
+}
+
+.bonus-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.bonus-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.total {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.cta-bonus {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+/* SCARCITY */
+.scarcity {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border: 2px solid #ef4444;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.scarcity h2 {
+  color: #ef4444;
+  margin-bottom: 15px;
+}
+
+.info {
+  font-size: 18px;
+}
+
+.warning {
+  opacity: 0.7;
+  margin: 10px 0 20px;
+}
+
+.cta-scarcity {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ef4444;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* FAQ */
     .faq-item {
       border-bottom: 1px solid #333;
       padding: 15px 0;
@@ -382,12 +500,16 @@ li {
   </li>
 </ul>
        </div>
+       
+  <p class="emotion">
+    Udah capek promosi tiap hari, tapi hasilnya masih sama?
+  </p>
      </section>
      <!--SOLUTION-->
      <section class="section section hidden">
-       <h2>
-         Manfaat punya landingpage
-       </h2>
+       <h3>
+         Manfaat landingpage
+       </h3>
        <ul class="checklist">
   <li>
     <span class="icon">✔</span>
@@ -425,7 +547,7 @@ li {
      </section>
      <!--FEATURES-->
      <section class="section section hidden">
-       <h2>Apa yang kamu dapat</h2>
+       <h3>Apa yang kamu dapat</h3>
        <div class="box">
 <ul class="checklist">
   <li>
@@ -452,17 +574,67 @@ li {
        </p>
        </section>
        <br>
-       <!--TARGET-->
-       <section class="target section hidden">
-         <h2>Landingpage ini cocok untuk</h2>
-         <ul>
-           <li>🏪 UMKM dan pebisnis online</li>
-           <li>🎥 Konten kreator & personal brand</li>
-           <li>💼 Freelancer & jasa profesional</li>
-           <li>🚀 Produk digital / jasa online</li>
-         </ul>
-       </section>
-       <br>
+       <section class="trust">
+  <h2>Dipercaya Banyak Pelaku Bisnis</h2>
+
+  <div class="trust-grid">
+    <div class="card">
+      <p>"Designnya clean dan langsung dipakai jualan!"</p>
+      <span>- Rina, Online Shop</span>
+    </div>
+
+    <div class="card">
+      <p>"Lebih profesional dibanding cuma pakai IG."</p>
+      <span>- Dika, Freelancer</span>
+    </div>
+
+    <div class="card">
+      <p>"Closing meningkat setelah pakai landing page."</p>
+      <span>- Budi, UMKM</span>
+    </div>
+  </div>
+</section>
+
+  <!--BONUS-->
+  <section class="bonus">
+  <h2>🎁 Bonus Eksklusif Hari Ini</h2>
+  
+  <ul class="bonus-list">
+    <li>
+      <strong>Template Landing Page</strong>
+      <span>Senilai 200rb</span>
+    </li>
+    <li>
+      <strong>Copywriting Siap Pakai</strong>
+      <span>Senilai 150rb</span>
+    </li>
+    <li>
+      <strong>Free Revisi 2x</strong>
+      <span>Senilai 100rb</span>
+    </li>
+  </ul>
+
+  <p class="total">
+    Total Bonus Senilai <strong>450rb</strong> - GRATIS!
+  </p>
+
+  <a href="#" class="cta-bonus">Ambil Sekarang 🚀</a>
+</section>
+
+<!--SCARCITY-->
+<section class="scarcity">
+  <h2>⚠️ Slot Terbatas</h2>
+  <p id="countdown"></p>
+  <p class="info">
+    Saat ini hanya tersedia <strong>5 slot</strong> untuk bulan ini.
+  </p>
+
+  <p class="warning">
+    Jika slot habis, kamu harus menunggu bulan depan.
+  </p>
+
+  <a href="#" class="cta-scarcity">Amankan Sekarang 🚀</a>
+</section>
        <!-- FAQ -->
        <section class="faq section hidden">
          <h2>Pertanyaan Umum</h2>
@@ -542,6 +714,17 @@ faqItems.forEach(item => {
     });
 });
 </script> 
+<script>let time = 3600; // 1 jam
+
+setInterval(() => {
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  document.getElementById("countdown").innerText =
+    `Promo berakhir dalam ${minutes}:${seconds}`;
+
+  time--;
+}, 1000); </script>
 </body>
  
  </html>
